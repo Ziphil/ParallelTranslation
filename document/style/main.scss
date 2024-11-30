@@ -32,16 +32,16 @@
   &[data-lang="sh"] {
     --background-color: hsl(198, 100%, 50%);
     --text-color: white;
-    --stroke-color: hsl(198, 100%, 20%);
+    --stroke-color: hsl(198, 100%, 30%);
     --font-family: #{$sans-font-family};
   }
 }
 
 .row-left {
-  width: 44rem;
+  width: 42rem;
   height: 100%;
   padding-inline-end: 4rem;
-  margin-inline-end: 8rem;
+  margin-inline-end: 9rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,6 +75,8 @@
   font-family: var(--font-family);
   color: var(--text-color);
   line-height: 1.4;
+  letter-spacing: 0.02em;
+  word-spacing: 0.1em;
   flex: 1 1 auto;
   position: relative;
 }
@@ -88,7 +90,7 @@
 .text-dummy {
   inset: 0rem;
   color: var(--stroke-color);
-  -webkit-text-stroke: 0.1em var(--stroke-color);
+  -webkit-text-stroke: 0.075em var(--stroke-color);
   display: block;
   position: absolute;
   z-index: 0;  
