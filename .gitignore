@@ -2,6 +2,7 @@ node_modules
 dist
 out
 log
+recitation
 *.code-workspace
 *.env
 *.odp
