@@ -1,0 +1,31 @@
+\zml?|version="1.1"|;
+\xml?|version="1.0",encoding="UTF-8"|;
+
+
+\root<
+  \use-style|href="../style/main.css"|;
+
+  \slide<
+    \div|class="content"|<
+      \row|lang="en"|<
+        There was a man who had two sons.
+      >
+      \row|lang="sh"|<
+        kavat a zis atac e qasot al’aqec.
+      >
+    >
+  >
+
+  \slide<
+    \div|class="content"|<
+      \row|lang="en"|<
+        The younger one said to his father, “Father, give me my share of the estate.”
+      >
+      \row|lang="sh"|<
+        kécas a qasot azimel ca qâz i ces.⹀
+        «yo qâz, ditat niqis a’c ca tel e talik adoz i kivlet.»
+      >
+    >
+  >
+
+>
