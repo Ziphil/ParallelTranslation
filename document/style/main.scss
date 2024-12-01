@@ -25,13 +25,13 @@
   align-items: center;
   flex: 1 1 0rem;
   &[data-lang="en"] {
-    --background-color: hsl(0, 0%, 95%);
     --text-color: hsl(0, 0%, 20%);
+    --background-color: hsl(0, 0%, 95%);
     --stroke-color: transparent;
   }
   &[data-lang="sh"] {
-    --background-color: hsl(198, 100%, 50%);
     --text-color: white;
+    --background-color: hsl(198, 100%, 50%);
     --stroke-color: hsl(198, 100%, 30%);
     --font-family: #{$sans-font-family};
   }
@@ -78,20 +78,74 @@
   letter-spacing: 0.02em;
   word-spacing: 0.1em;
   flex: 1 1 auto;
-  position: relative;
 }
 
-.text-real {
-  display: block;
-  position: relative;
-  z-index: 1;
+.title-content {
+  width: 100%;
+  height: 100%;
+  row-gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  &::before,
+  &::after {
+    height: 4rem;
+    background-color: hsl(35, 100%, 60%);
+    flex: 0 0 auto;
+    content: "";
+  }
 }
 
-.text-dummy {
-  inset: 0rem;
-  color: var(--stroke-color);
-  -webkit-text-stroke: 0.075em var(--stroke-color);
-  display: block;
-  position: absolute;
-  z-index: 0;  
+.title {
+  row-gap: 6rem;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  --text-color: white;
+  --background-color: hsl(198, 100%, 50%);
+  --stroke-color: hsl(198, 100%, 30%);
+}
+
+.title-subject {
+  font-family: $special-font-family;
+  font-weight: 600;
+  font-size: 8rem;
+  letter-spacing: 0.05em;
+}
+
+.title-separator {
+  font-family: $special-font-family;
+  font-weight: 800;
+  font-size: 4rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.title-language {
+  font-family: $special-font-family;
+  font-weight: 600;
+  font-size: 12rem;
+  letter-spacing: 0.15em;
+}
+
+.bordered {
+  position: relative;
+  & >.bordered-real {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  & >.bordered-dummy {
+    inset: 0rem;
+    color: var(--stroke-color);
+    -webkit-text-stroke: min(0.075em, 0.75rem) var(--stroke-color);
+    display: block;
+    position: absolute;
+    user-select: none;
+    pointer-events: none;
+    z-index: 0;  
+  }
 }

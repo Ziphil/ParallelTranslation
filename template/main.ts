@@ -22,12 +22,13 @@ manager.registerElementRule(["row"], "slide", (transformer, document, element) =
     });
     self.appendElement("p", (self) => {
       self.addClassName("text");
+      self.addClassName("bordered");
       self.appendElement("span", (self) => {
-        self.addClassName("text-real");
+        self.addClassName("bordered-real");
         self.appendChild(transformer.apply());
       });
       self.appendElement("span", (self) => {
-        self.addClassName("text-dummy");
+        self.addClassName("bordered-dummy");
         self.appendChild(transformer.apply());
       });
     });
