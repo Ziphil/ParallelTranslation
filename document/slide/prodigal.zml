@@ -6,6 +6,22 @@
   \use-style|href="../style/main.css"|;
 
   \slide<
+    \div|class="title-content"|<
+      \div|class="title"|<
+        \div|class="title-subject bordered"|<
+          \span|class="bordered-real"|<The Parable of the Prodigal Son>\span|class="bordered-dummy"|<The Parable of the Prodigal Son>
+        >
+        \div|class="title-separator bordered"|<
+          \span|class="bordered-real"|<in>\span|class="bordered-dummy"|<in>
+        >
+        \div|class="title-language bordered"|<
+          \span|class="bordered-real"|<Shaleian>\span|class="bordered-dummy"|<Shaleian>
+        >
+      >
+    >
+  >
+
+  \slide<
     \div|class="content"|<
       \row|lang="en"|<
         There was a man who had two sons.
